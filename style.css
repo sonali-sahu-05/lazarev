@@ -1,0 +1,217 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* nav part section */
+nav{
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(6, 6, 6);
+    position: fixed;
+    align-items: flex-start;
+    display: flex;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav h1 {
+    font-size: 1.6vw;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vw 0;
+    margin-bottom: 2.6vw;
+    z-index: 10;
+}
+.nav-part2 h4{
+    font-size: 0.73vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+.nav-part2 h5{
+
+    margin-bottom: 1vw;
+    /* opacity: 0; */
+    display: none;
+    overflow: hidden;
+    /* background-color: yellowgreen; */
+}
+.nav-part2 h5 span{
+    font-size: 0.74vw;
+    font-weight: 400;
+    transform: translateY(25px);
+    display: inline-block;
+    
+}
+ nav button{
+    display: flex;
+    background-color:rgb(93, 187, 0);
+    align-items: center;
+    padding: 14px 20px;
+    font-size: 0.85vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+}
+nav button svg{
+    height: 0.85vw;
+    margin-left: 1.6vw;
+}
+#nav-bottom {
+    width: 79%;
+    height: 0vh;
+    position: absolute;
+    /* background-color: red; */
+    top: 100%;
+    background-color: #111;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* parent of page1 h1 so flex comes */
+#page1 h1{
+    font-size: 8.5vw;
+    top: 50%;
+    text-transform: uppercase;
+    line-height:8.5vw;
+}
+#page1 h1 svg{
+    height: 6vw ;
+    background-color:rgb(93, 187, 0);
+    border-radius: 50%;
+    width: 6vw;
+}
+#page1 p{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+#page1-something{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page1-something h4{
+    font-weight: 400;
+    font-size: 2vw;
+    padding: 5px 10px;
+    border:  1px solid rgb(208, 196, 196);
+    border-radius: 20px;
+    text-transform: lowercase;
+}
+#page1-something h4:nth-last-child(2){
+    /* and targeted */
+    border: none;
+    padding:  2px;
+    margin-top: 0.5px;
+}
+
+
+
+#moving-div{
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 10vh;
+    bottom: 3%;
+   white-space:nowrap;
+   width: 70%;
+   padding:  2vw;
+   overflow: hidden;
+}
+
+#moving-div .move {
+   display: inline-block; 
+   animation-name: mobe;
+   animation-duration: 9s;
+  
+   animation-iteration-count: infinite;
+   transition-timing-function: linear;
+
+}
+#blur-left{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(#111,transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#blur-right{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(transparent,#111);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#moving-div .move img{
+  
+    height: 2vw;
+    margin:  0 1vw;
+
+}
+
+
+@keyframes mobe {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(227, 28, 28);
+}
